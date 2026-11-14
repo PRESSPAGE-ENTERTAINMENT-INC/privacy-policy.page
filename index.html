@@ -40,6 +40,17 @@ a:focus,
 select:focus {
     outline: 3px solid #005fcc;
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
 </style>
 <body>
 <a href="#main-content" class="skip-link">
@@ -59,7 +70,7 @@ select:focus {
     <label for="policySelect" class="w3-padding">
       Select a Privacy Policy
     </label>
-    <p id="policyHelp">
+    <p id="policyHelp" class="sr-only">
         Choose a company privacy policy to open in a dialog window.
     </p>
     <select id="policySelect"
